@@ -20,7 +20,7 @@ func (a *App) Run() error {
 	address := fmt.Sprintf("%s:%d", a.Config.Server.Address, a.Config.Server.Port)
 
 	// Set up the metrics handler
-	handler := metrics.MetricsHandler(a.Config.MetricsCategory, a.Config.QueryParams, a.Config.RemoteStatisticServer.Address, a.Config.RemoteStatisticServer.Port)
+	handler := metrics.MetricsHandler(a.Config.MetricsStatisticsCategory, a.Config.QueryParams, a.Config.RemoteStatisticServer.Address, a.Config.RemoteStatisticServer.Port)
 
 	http.Handle("/metrics", handler)
 

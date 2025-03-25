@@ -6,7 +6,11 @@ RemoteStatisticServer:
   address: "10.0.20.142"
   port: 31004
 
-MetricsCategory:
+RemoteMonitoringServer:
+  address: "10.0.20.142"
+  port: 31003
+
+MetricsStatisticsCategory:
   - "amf"
   - "smf"
   - "udmAuthentication"
@@ -31,5 +35,16 @@ MetricsCategory:
   - "hss"
   - "sgw"
   - "sgwlb"
+
+MetricsMonitoringCategory:
+  - "systemInfo"
+  - "subscriberID"
+  - "ranNodeID"
+  - "AMF/nfUpdate"
+  - "systemThroughput"
+  - "throughputMonConf"
+  - "ENodeID"
+  - "accessNtwrkIdList"
+  - "subscriberID"
 
 queryParams: '{"serviceID":"slice1","tenantId":"enterprise1"}'

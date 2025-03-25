@@ -13,12 +13,20 @@ type Config struct {
 		Address string `yaml:"address"`
 		Port    uint   `yaml:"port"`
 	} `yaml:"Server"`
+
 	RemoteStatisticServer struct {
 		Address string `yaml:"address"`
 		Port    uint   `yaml:"port"`
 	} `yaml:"RemoteStatisticServer"`
-	MetricsCategory []string `yaml:"MetricsCategory"`
-	QueryParams     string   `yaml:"queryParams"`
+
+	RemoteMonitoringServer struct {
+		Address string `yaml:"address"`
+		Port    uint   `yaml:"port"`
+	} `yaml:"RemoteMonitoringServer"`
+
+	MetricsStatisticsCategory []string `yaml:"MetricsStatisticsCategory"`
+	MetricsMonitoringCategory []string `yaml:"MetricsMonitoringCategory"`
+	QueryParams               string   `yaml:"queryParams"`
 }
 
 // LoadConfig loads the YAML configuration file
