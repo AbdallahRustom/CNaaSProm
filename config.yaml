@@ -1,0 +1,62 @@
+Server:
+  address: "10.0.20.193"
+  port: 8080
+
+RemoteStatisticServer:
+  address: "10.0.20.142"
+  port: 31004
+
+MetricsCategory:
+  - "amf"
+  # - "smf"
+  - "udmAuthentication"
+  - "sdm"
+  - "ueContext"
+  - "ausfAuthentication"
+  # - "soRProtection"
+  - "subsData"
+  - "SubDataProv"
+  - "udsf"
+  - "timer"
+  # - "userPlane"
+  - "configuration"
+  - "monitoring"
+  - "NSSelection"
+  - "NSSAIAvailiability"
+  # - "pcf"
+  - "nrfProxy"
+  - "nrf"
+  # - "eir"
+  # - "mme"
+  # - "hss"
+  # - "sgw"
+  # - "sgwlb"
+
+
+# baseURLs:
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/amf"
+#   # - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/smf"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/udmAuthentication"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/sdm"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/ueContext"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/ausfAuthentication"
+#   # - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/soRProtection"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/subsData"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/SubDataProv"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/udsf"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/timer"
+#   # - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/userPlane"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/configuration"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/monitoring"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/NSSelection"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/NSSAIAvailiability"
+#   # - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/pcf"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/nrfProxy"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/nrf"
+#   # - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/eir"
+#   - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/mme"
+#   # - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/hss"
+#   # - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/sgw"
+#   # - "http://10.0.20.142:31004/nnfcm-statistics/v2/stats/sgwlb"
+
+queryParams: '{"serviceID":"slice1","tenantId":"enterprise1"}'
