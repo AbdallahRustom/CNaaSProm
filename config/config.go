@@ -43,5 +43,10 @@ func LoadConfig(filename string) (*Config, error) {
 		return nil, fmt.Errorf("failed to decode config file: %v", err)
 	}
 
+	// Validate configuration
+	if len(config.MetricsStatisticsCategory) == 0 && len(config.MetricsMonitoringCategory) == 0 {
+		return nil, fmt.Errorf("no metrics categories provided for statistics or monitoring")
+	}
+
 	return config, nil
 }

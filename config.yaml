@@ -1,13 +1,13 @@
 Server:
-  address: "10.0.20.193"
-  port: 8080
+  address: "10.0.20.217"
+  port: 8090
 
 RemoteStatisticServer:
-  address: "10.0.20.142"
+  address: "10.0.20.217"
   port: 31004
 
 RemoteMonitoringServer:
-  address: "10.0.20.142"
+  address: "10.0.20.217"
   port: 31003
 
 MetricsStatisticsCategory:
@@ -17,7 +17,7 @@ MetricsStatisticsCategory:
   - "sdm"
   - "ueContext"
   - "ausfAuthentication"
-  - "soRProtection"
+  # - "soRProtection"
   - "subsData"
   - "SubDataProv"
   - "udsf"
@@ -30,21 +30,20 @@ MetricsStatisticsCategory:
   - "pcf"
   - "nrfProxy"
   - "nrf"
-  - "eir"
+  # - "eir"
   - "mme"
   - "hss"
   - "sgw"
-  - "sgwlb"
+  # - "sgwlb"
 
 MetricsMonitoringCategory:
-  - "systemInfo"
-  - "subscriberID"
-  - "ranNodeID"
-  - "AMF/nfUpdate"
+  # - "systemInfo"
+  # - "subscriberID"
+  # - "ranNodeID"
   - "systemThroughput"
-  - "throughputMonConf"
-  - "ENodeID"
-  - "accessNtwrkIdList"
-  - "subscriberID"
+  # - "throughputMonConf"  #In new Realse#
+  # - "ENodeID"
+  # - "accessNtwrkIdList"
+  # - "subscriberID"
 
 queryParams: '{"serviceID":"slice1","tenantId":"enterprise1"}'
